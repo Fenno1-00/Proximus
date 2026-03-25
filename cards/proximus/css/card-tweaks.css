@@ -1,0 +1,25 @@
+/* Remove card chrome */
+.sapUiIntegrationCard.sapFCard,
+.sapFCard {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: transparent !important;
+}
+
+.sapFCardContent {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/* Image fills card */
+.fullCardImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+

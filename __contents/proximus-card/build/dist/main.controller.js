@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(t){"use strict";return t.extend("proximus.main",{onInit:function(){var t=this.getView().byId("img");if(!t)return;t.setSrc(sap.ui.require.toUrl("proximus/images/myHR.png"));var i=this.getView();setTimeout(function(){var t=i.getDomRef();if(t){var e=t.closest(".sapUiIntegrationCard")||t.closest(".sapFCard");if(e){e.style.transition="opacity 0.5s";e.style.opacity="0";setTimeout(function(){e.style.display="none"},500)}}},1e4)}})});
+//# sourceMappingURL=main.controller.js.map
