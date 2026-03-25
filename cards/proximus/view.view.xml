@@ -4,5 +4,10 @@
 		  displayBlock="true"
 		  controllerName="proximus.main">
 
-	<Image id="img" width="100%" class="fullCardImage"></Image>
+	<VBox id="cardWrapper" class="cardWrapper" width="100%">
+		<VBox class="cardTextOverlay">
+			<Text text="Welcome back 👋" class="cardWelcomeTitle"/>
+			<Text text="Check your HR services below" class="cardWelcomeSubtitle"/>
+		</VBox>
+	</VBox>
 </mvc:View>

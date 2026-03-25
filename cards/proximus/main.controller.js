@@ -5,11 +5,19 @@ sap.ui.define([
 
     return Controller.extend("proximus.main", {
         onInit: function () {
-            var oImg = this.getView().byId("img");
-            if (!oImg) return;
+            var oView = this.getView();
+            var sImgSrc = sap.ui.require.toUrl("proximus/images/myHR.png");
 
-            // Set the image source directly
-            oImg.setSrc(sap.ui.require.toUrl("proximus/images/myHR.png"));
+            // Set background image on the wrapper after it renders
+            var oWrapper = oView.byId("cardWrapper");
+            oWrapper.addEventDelegate({
+                onAfterRendering: function () {
+                    var oDom = oWrapper.getDomRef();
+                    if (oDom) {
+                        oDom.style.backgroundImage = "url('" + sImgSrc + "')";
+                    }
+                }
+            });
 
             // Hide the entire card after 10 seconds
             var oView = this.getView();
