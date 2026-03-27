@@ -2,7 +2,7 @@
 	"sap.package": {
 		"id": "ns.proximus",
 		"packageVersion": {
-			"version": "1.0.8",
+			"version": "1.1.0",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
@@ -123,6 +123,13 @@
 										"async": true,
 										"id": "app"
 									},
+									"resources": {
+										"css": [
+											{
+												"uri": "css/card-tweaks.css"
+											}
+										]
+									},
 									"dependencies": {
 										"minUI5Version": "1.38",
 										"libs": {
@@ -132,7 +139,18 @@
 									}
 								},
 								"sap.card": {
-									"type": "Component"
+									"type": "Component",
+									"configuration": {
+										"editor": "./dt/Configuration",
+										"parameters": {
+											"welcomeText": {
+												"value": "Welcome back 👋"
+											},
+											"welcomeSubtitle": {
+												"value": "Check your HR services below"
+											}
+										}
+									}
 								}
 							},
 							"vizResources": {

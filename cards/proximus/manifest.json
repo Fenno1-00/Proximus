@@ -36,6 +36,17 @@
 		}
 	},
 	"sap.card": {
-		"type": "Component"
+		"type": "Component",
+		"configuration": {
+			"editor": "./dt/Configuration",
+			"parameters": {
+				"welcomeText": {
+					"value": "Welcome back 👋"
+				},
+				"welcomeSubtitle": {
+					"value": "Check your HR services below"
+				}
+			}
+		}
 	}
 }
